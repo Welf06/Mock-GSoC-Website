@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Roboto+Condensed:wght@300&display=swap");
+
+:root
+{
+	--pric: #00ADB5;
+	--secc:#393E46;
+	--backc: #EEE;
+	--light: #fff;
+	--dark: #000;
+}
+
+body
+{
+	background-color: var(--backc);
+}
+
+
+.flex
+{
+	display: flex;
+}
+
+*
+{
+	font-family: "JetBrains Mono", monospace;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar
+{
+	background-color: var(--dark);
+	color: var(--light);
+	width: 100%;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 2;
+}
+
+.navbar ul
+{
+	list-style: none;
+}
+
+.navbar a
+{
+	text-decoration: none;
+	color: var(--light);
+	padding: 10px;
+	margin: 0 5px;
+	height: 100%;
+}
+
+nav .list
+{
+	display: flex;
+	padding: 20px 50px;
+	font-size: 20px;
+}
+
+.navbar .logo
+{
+	font-size: 30px;
+	padding: 15px 70px;
+}
+
+nav a:hover,
+nav a:active
+{
+	background-color: var(--light);
+	color: var(--dark);
+	border-radius: 10px;
+}
+
+
+.landing 
+{
+	background-image: url("../images/1567666.png");
+	background-size: cover;
+	min-height: 600px;
+	color: var(--light);
+	text-align: center;
+}
+
+.landing .betalab
+{
+	padding-top: 140px;
+	padding-bottom: 10px;
+}
+
+.landing .betalab img
+{
+	width: 500px;
+}
+
+.landing .text h3
+{
+	margin-top: 50px;
+	font-size: 30px;
+}
+.landing .text h1
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 85px;
+}
+
+
+.about 
+{
+	width: 50%;
+	background-color: var(--pric);
+	padding-bottom: 60px;
+}
+
+.about h1
+{
+	font-size: 50px;
+	padding: 20px 30px;
+}
+
+.about p
+{
+	font-size: 25px;
+	padding: 20px 40px;	
+}
+
+
+/*css for time line */
+
+.time 
+{
+  background-color: var(--secc);
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  width: 50%;
+}
+
+.time h1
+{
+	font-family: "JetBrains Mono", monospace;
+	color: var(--light);
+	padding: 10px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.contain {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.contain::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+.container
+{
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.projpage h1
+{
+	padding: 50px 60px;
+	font-size: 50px;
+}
+
+.projpage .grid
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.projects
+{
+	text-align: center;
+}
+
+.card
+{
+	background-color: var(--pric);
+	border-radius: 10px;
+	padding: 20px;
+	margin: 10px;
+	width: 470px;
+}
+
+.card h3
+{
+	padding-bottom: 10px;
+}
+
+.card p
+{
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+
+.projpage a
+{
+	text-decoration: none;
+	color: var(--dark);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* mobile properties */
+
+
+@media(max-width: 992px) 
+{	
+	.navbar
+	{
+		flex-direction: column;
+	}
+	
+	.navbar .logo
+	{
+		padding-top: 10px;
+		text-align: center;
+
+	}
+
+	.navbar .list
+	{
+		padding-top: 10px;
+		padding-left: 50px;
+	}
+
+	.navbar a
+	{
+		font-size: 15px;
+		padding: 0 8px;
+	}
+
+	.navbar li
+	{
+		background-color: var(--secc);
+	}
+
+	
+	nav a:active
+	{
+		background-color: var(--light);
+		color: var(--dark);
+	}
+
+	.flex
+	{
+		flex-direction: column;
+	}
+
+	.landing .betalab
+	{
+		padding-top: 180px;
+	}
+
+	.about h1
+	{
+		font-size: 30px;
+	}
+
+	.about p
+	{
+		font-size: 15px;
+	}
+
+	.about
+	{
+		width: 100%;
+	}
+
+	.time
+	{
+		width: 100%;
+	}
+
+	.projpage .grid
+	{
+		grid-template-columns: repeat(1, 1fr);
+	}	
+
+	.card
+	{
+		width: 100%;
+	}
+
+	.container
+	{
+		margin: 0 10px;
+		padding: 0 17px;
+	}
+
+	.landing .betalab img
+	{	
+		width: 300px;
+	}
+
+
+/* Place the timelime to the left */
+  .timeline::after 
+  {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .contain 
+  {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .contain::before 
+  {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after 
+  {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right 
+  {
+    left: 0%;
+  }
+ }
