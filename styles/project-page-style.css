@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat&display=swap');
 
 :root{
    --blue: #00ADB5;
@@ -16,8 +16,59 @@ body{
 
 .header{
    font-family: 'JetBrains Mono', monospace;
-   background-color: #00ADB5;
+   background-color: var(--blue);
    text-align: center;
    margin: 0;
    padding: 0;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   margin-bottom: 2.5%;
+}
+
+
+.box1 {
+   background-color: #ffffff;
+   float: left;
+   margin-left: 1.5%;
+   margin-right: 1.5%;
+   width: 60%;
+   border-radius: 15px;
+   box-shadow: 2px 2px 2px 0px var(--dark_blue);
+}
+
+.box2 {
+   background-color: #ffffff;
+   float: left;
+   margin-left: 1.5%;
+   margin-right: 1.5%;
+   width: 34%;
+   border-radius: 15px;
+   box-shadow: 2px 2px 2px 0px var(--dark_blue);
+}
+
+.box3 {
+      background-color: #ffffff;
+      float: left;
+      margin-top: 3%;
+      width: 97%;
+      margin-left: 1.5%;
+      margin-right: 1.5%;
+      border-radius: 15px;
+      box-shadow: 2px 2px 2px 0px var(--dark_blue);
+   }
+
+.content1{
+   margin-left: 2%;
+}
+
+.content2{
+   text-align: center;
+}
+
+.content3{
+   margin-left: 2%;
+}
+
+.icons {
+   color: var(--dark_blue);
 }
