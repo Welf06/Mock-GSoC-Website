@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Roboto+Condensed:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat&display=swap');
 
 :root
 {
@@ -6,7 +6,7 @@
 	--secc:#393E46;
 	--backc: #EEE;
 	--light: #fff;
-	--dark: #000;
+	--dark: #222831;
 }
 
 body
@@ -245,7 +245,7 @@ nav a:active
 
 .projpage h1
 {
-	padding: 50px 60px;
+	padding: 50px 1.5%;
 	font-size: 50px;
 }
 
@@ -267,6 +267,7 @@ nav a:active
 	padding: 20px;
 	margin: 10px;
 	width: 470px;
+	box-shadow: 1px 1px 1px 1px var(--light);
 }
 
 .card h3
@@ -286,7 +287,45 @@ nav a:active
 	color: var(--dark);
 }
 
+.contripage{
+	margin-top: 50px;
+	background-color: var(--pric);
+	text-align: center;
+}
+.contripage h2
+{
+	padding: 50px 1.5%;
+	font-size: 50px;
+	color: var(--light);
+	text-align: left;
+}
 
+.contripage p {
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+	text-align: justify;
+	font-size: 25px
+}
+
+.contripage button{
+	background-color: var(--secc);
+	text-align: center;
+	width: 40%;
+	min-width: 300px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	height: 80px;
+	padding-left: 5px 10px 5px 10px;
+	border-radius: 10px;
+	font-size: 30px;
+	color: var(--light);
+	box-shadow: 0px 0px 0px 3px#EEE;
+
+}
+
+.end{
+	height: 70px;
+}
 
 
 
