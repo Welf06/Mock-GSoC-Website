@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@300&display=swap');
+
+:root{
+   --blue: #00ADB5;
+   --dark_blue: #222831;
+}
+
+
+body{
+   font-family: 'Montserrat', sans-serif;
+   color: #222831;
+   background-color: #eeeeee;
+   margin: 0;
+
+}
+
+.header{
+   font-family: 'JetBrains Mono', monospace;
+   background-color: #00ADB5;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+}
