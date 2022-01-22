@@ -322,7 +322,7 @@ nav a:active
 	.navbar a
 	{
 		font-size: 15px;
-		padding: 0 8px;
+		padding: 0 6px;
 	}
 
 	.navbar li
@@ -335,6 +335,7 @@ nav a:active
 	{
 		background-color: var(--light);
 		color: var(--dark);
+		border-radius: 0;
 	}
 
 	.flex
@@ -375,6 +376,7 @@ nav a:active
 	.card
 	{
 		width: 100%;
+		margin-left: 0;
 	}
 
 	.container
