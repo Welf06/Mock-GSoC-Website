@@ -1,151 +1,147 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Roboto+Condensed:wght@300&display=swap");
 
-:root {
-  --pric: #00adb5;
-  --secc: #393e46;
-  --backc: #eee;
-  --light: #fff;
-  --dark: #000;
+:root
+{
+	--pric: #00ADB5;
+	--secc:#393E46;
+	--backc: #EEE;
+	--light: #fff;
+	--dark: #000;
 }
 
-body {
-  background-color: var(--backc);
+body
+{
+	background-color: var(--backc);
 }
 
-.flex {
-  display: flex;
+
+.flex
+{
+	display: flex;
 }
 
-* {
-  font-family: "JetBrains Mono", monospace;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+*
+{
+	font-family: "JetBrains Mono", monospace;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
-
-nav {
-  display: flex;
-  /* height: 75px; */
-  width: 100%;
-  background-color: var(--dark);
-  justify-content: space-between;
-  padding: 0 50px 0 100px;
-  flex-wrap: wrap;
-  position: fixed;
-  /* overflow: hidden; */
-  z-index: 2;
-}
-
-/*
-justify-content: center;
-	align-items: center;
-
-
-
 
 .navbar
 {
-	height: 75px;
-	background-color: var(--secc);
-}
-*/
-
-nav .logo {
-  color: var(--light);
-  font-size: 35px;
-  font-weight: 600;
-  padding: 10px 30px;
-  margin-top: 5px;
+	background-color: var(--dark);
+	color: var(--light);
+	width: 100%;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 2;
 }
 
-nav .list {
-  margin: 25px 0;
-  padding: 0 25px;
+.navbar ul
+{
+	list-style: none;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
+.navbar a
+{
+	text-decoration: none;
+	color: var(--light);
+	padding: 10px;
+	margin: 0 5px;
+	height: 100%;
 }
 
-nav ul li {
-  margin: 0 5px;
+nav .list
+{
+	display: flex;
+	padding: 20px 50px;
+	font-size: 20px;
 }
 
-nav ul li a {
-  color: var(--light);
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
+.navbar .logo
+{
+	font-size: 30px;
+	padding: 15px 70px;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-  color: var(--secc);
-  background: var(--light);
+nav a:hover,
+nav a:active
+{
+	background-color: var(--light);
+	color: var(--dark);
+	border-radius: 10px;
 }
 
-.landing {
-  background-image: url("../images/1567666.png");
-  background-size: cover;
-  min-height: 600px;
-  color: var(--light);
-  text-align: center;
+
+.landing 
+{
+	background-image: url("../images/1567666.png");
+	background-size: cover;
+	min-height: 600px;
+	color: var(--light);
+	text-align: center;
 }
 
-.landing .betalab {
-  padding-top: 140px;
-  padding-bottom: 10px;
+.landing .betalab
+{
+	padding-top: 140px;
+	padding-bottom: 10px;
 }
 
-.landing .betalab img {
-  width: 500px;
+.landing .betalab img
+{
+	width: 500px;
 }
 
-.landing .text h3 {
-  margin-top: 50px;
-  font-size: 30px;
+.landing .text h3
+{
+	margin-top: 50px;
+	font-size: 30px;
 }
-.landing .text h1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: 85px;
-}
-
-.about {
-  width: 50%;
-  background-color: var(--pric);
-  padding-bottom: 60px;
+.landing .text h1
+{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 85px;
 }
 
-.about h1 {
-  font-size: 50px;
-  padding: 20px 30px;
+
+.about 
+{
+	width: 50%;
+	background-color: var(--pric);
+	padding-bottom: 60px;
 }
 
-.about p {
-  font-size: 25px;
-  padding: 20px 40px;
+.about h1
+{
+	font-size: 50px;
+	padding: 20px 30px;
 }
+
+.about p
+{
+	font-size: 25px;
+	padding: 20px 40px;	
+}
+
 
 /*css for time line */
 
-/* I DONT KNOW IS CLASS KO HATATE HI POORA LAYOUT FK HO JATA TIMELINE KA */
-
-.time {
+.time 
+{
   background-color: var(--secc);
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   width: 50%;
 }
 
-.time h1 {
-  font-family: "JetBrains Mono", monospace;
-  color: var(--light);
-  padding: 10px;
+.time h1
+{
+	font-family: "JetBrains Mono", monospace;
+	color: var(--light);
+	padding: 10px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -177,13 +173,13 @@ nav ul li a:hover {
 
 /* The circles on the timeline */
 .contain::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 25px;
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #ff9f55;
+  border: 4px solid #FF9F55;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -240,170 +236,191 @@ nav ul li a:hover {
   border-radius: 6px;
 }
 
-.container {
-  padding: 0 20px;
-  margin: 0 auto;
+
+.container
+{
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
-.projpage h1 {
-  padding: 50px 60px;
-  font-size: 50px;
+.projpage h1
+{
+	padding: 50px 60px;
+	font-size: 50px;
 }
 
-.projpage .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.projpage .grid
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
-.projects {
-  text-align: center;
+.projects
+{
+	text-align: center;
 }
 
-.card {
-  background-color: var(--pric);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-  width: 470px;
+.card
+{
+	background-color: var(--pric);
+	border-radius: 10px;
+	padding: 20px;
+	margin: 10px;
+	width: 470px;
 }
 
-.card h3 {
-  padding-bottom: 10px;
+.card h3
+{
+	padding-bottom: 10px;
 }
 
-.card p {
-  padding-bottom: 20px;
-  padding-top: 5px;
+.card p
+{
+	padding-bottom: 20px;
+	padding-top: 5px;
 }
 
-.projpage a {
-  text-decoration: none;
-  color: var(--dark);
+.projpage a
+{
+	text-decoration: none;
+	color: var(--dark);
 }
+
+
+
+
+
+
+
+
+
+
 
 /* mobile properties */
 
-@media (max-width: 992px) {
-  /*
-nav ul
-{
-	flex-direction: column;
-}
 
-nav ul li a 
-{
-	color: var(--light);
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: 500;
-	padding: 8px 15px;
-	border-radius: 5px;
-	letter-spacing: 1px;
-}
+@media(max-width: 992px) 
+{	
+	.navbar
+	{
+		flex-direction: column;
+	}
+	
+	.navbar .logo
+	{
+		padding-top: 10px;
+		text-align: center;
 
-*/
+	}
 
-  
-    nav {
-    padding: 0 0 0 0;
-    
-	width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-	flex-wrap: wrap;
-  }
+	.navbar .list
+	{
+		padding-top: 10px;
+		padding-left: 50px;
+	}
 
-  nav .logo {
-    /* padding: 0 auto; */
-    text-align: center;
-  }
+	.navbar a
+	{
+		font-size: 15px;
+		padding: 0 8px;
+	}
 
-  nav ul li a {
-    border: 1px solid darkgrey;
-    border-radius: 10px;
+	.navbar li
+	{
+		background-color: var(--secc);
+	}
 
-  }
+	
+	nav a:active
+	{
+		background-color: var(--light);
+		color: var(--dark);
+	}
 
-  ul .list {
-    margin: 0;
-    padding: 0;
-  }
-  .flex {
-    flex-direction: column;
-  }
+	.flex
+	{
+		flex-direction: column;
+	}
 
-  .landing .betalab {
-    padding-top: 180px;
-  }
+	.landing .betalab
+	{
+		padding-top: 180px;
+	}
 
-  .about h1 {
-    font-size: 30px;
-  }
+	.about h1
+	{
+		font-size: 30px;
+	}
 
-  .about p {
-    font-size: 15px;
-  }
+	.about p
+	{
+		font-size: 15px;
+	}
 
-  .about {
-    width: 100%;
-  }
+	.about
+	{
+		width: 100%;
+	}
 
-  .time {
-    width: 100%;
-  }
+	.time
+	{
+		width: 100%;
+	}
 
-  .projpage .grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
+	.projpage .grid
+	{
+		grid-template-columns: repeat(1, 1fr);
+	}	
 
-  .card {
-    width: 320px;
-  }
+	.card
+	{
+		width: 100%;
+	}
 
-  .container {
-    margin: 0 10px;
-    padding: 0 17px;
-  }
+	.container
+	{
+		margin: 0 10px;
+		padding: 0 17px;
+	}
 
-  .landing .betalab img {
-    width: 300px;
-  }
+	.landing .betalab img
+	{	
+		width: 300px;
+	}
 
-  /* Place the timelime to the left */
-  .timeline::after {
+
+/* Place the timelime to the left */
+  .timeline::after 
+  {
     left: 31px;
   }
 
-  /* Full-width containers */
-  .contain {
+/* Full-width containers */
+  .contain 
+  {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-  /* Make sure that all arrows are pointing leftwards */
-  .contain::before {
+/* Make sure that all arrows are pointing leftwards */
+  .contain::before 
+  {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
 
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after 
+  {
     left: 15px;
   }
 
-  /* Make all right containers behave like the left ones */
-  .right {
+/* Make all right containers behave like the left ones */
+  .right 
+  {
     left: 0%;
   }
-}
-@media (max-width:600px) {
-	.list li{
-		margin-bottom: 10%;
-	}
-}
+ }
