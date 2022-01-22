@@ -84,8 +84,17 @@ body{
 .logo{
    max-width: fit-content;
    max-height: 50px;
-   padding-top: 5px;
+   padding-top: 20px;
+   margin-bottom: 20px;
    padding-left: 1.5%;
+   padding-bottom: 5px;
+   float: left;
+}
+
+.logos{
+   float: right;
+   padding-top: 30px;
+   padding-right: 1.5%;
    padding-bottom: 5px;
 }
 
@@ -94,6 +103,11 @@ body{
       margin-left: 10%;
       width: 80%;
       max-height: 50px;
+   }
+   .logos{
+      padding-top: 0;
+      margin-left: 10%;
+      width: 80%;
    }
    .box1 {
       background-color: #ffffff;
@@ -111,4 +125,5 @@ body{
       border-radius: 15px;
       box-shadow: 2px 2px 2px 0px var(--dark_blue);
    }
+
 }
