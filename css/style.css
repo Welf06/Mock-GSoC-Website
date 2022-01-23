@@ -460,7 +460,7 @@ nav a:active
 /* mobile properties */
 
 
-@media(max-width: 1024px) 
+@media(max-width: 1000px) 
 {	
 	
 	.navbar .logo
@@ -604,20 +604,25 @@ nav a:active
 	margin-right: 0%;
   }
   .faq-q-card{
+	  margin-bottom: 10px;
 	  width: 100%;
   }
   .faq-a-card{
+	  margin-bottom: 20px;
 	  width: 100%;
   }
-
+  .contactpage h2{
+	  padding-top: 30px;
+  }
   .end{
 	  text-align: center;
   }
   .logo{
 	display: block;
-	width: 70%;
-  margin-left: 15%;
-  margin-right: auto;
+	width: 50%;
+	height: auto;
+  	margin-left: 25%;
+  	margin-right: auto;
 }
 .logos{
 	padding-top: 0;
@@ -626,6 +631,21 @@ nav a:active
  }
 }
 
+@media(max-width: 700px){
+	.logo{
+		display: block;
+		width: 60%;
+		height: auto;
+		  margin-left: 20%;
+		  margin-right: auto;
+	
+}
+.logos{
+	padding-top: 0;
+	font-size: 15px;
+	padding-left: 10%;
+
+ }
 
 @media(max-width: 500px) 
 {	
@@ -702,9 +722,31 @@ nav a:active
 		box-shadow: 0 0 0 0 var(--dark);
 	}
 
+	.logo{
+		display: block;
+	width: 70%;
+  	margin-left: 15%;
+	  height: auto;
+  	margin-right: auto;
+	}
 	.logos{
-		padding-top: 0;
-		width: 90%;
-		padding-left: 16%;
+		float: none;
+		margin-left: 16%;
+		padding: 0 0 0 0;
+		font-size: 15px;
+		width: 70%;
+
+	 }
+}}
+
+@media(max-width: 360px) {
+	.logos{
+		float: none;
+		margin-left: 10%;
+		margin-right: 10%;
+		padding: 0 0 0 0;
+		font-size: 15px;
+		width: 80%;
+
 	 }
 }
