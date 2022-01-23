@@ -312,7 +312,7 @@ nav a:active
 	text-align: center;
 	width: 40%;
 	min-width: 300px;
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-bottom: 30px;
 	height: 80px;
 	padding-left: 5px 10px 5px 10px;
@@ -320,7 +320,10 @@ nav a:active
 	font-size: 30px;
 	color: var(--light);
 	box-shadow: 0px 0px 0px 3px#EEE;
+}
 
+.contripage a :hover{
+	background-color: var(--dark);
 }
 
 
@@ -366,6 +369,7 @@ nav a:active
 	margin-left: 4%;
 	margin-right: 3%;
 	grid-row: 3;
+	margin-bottom: 20px;
 }
 .faq-q-card{
 	background-color: var(--pric);
@@ -403,10 +407,10 @@ nav a:active
 .disclogo{
 	float: right;
 	background-color: var(--secc);
-	padding: 5px 10px 5px 10px;
+	padding: 15px 20px 15px 20px;
 	border-radius: 10px;
-	width: 30%;
-	margin-right: 5%;
+	width: 20%;
+	margin-right: 8%;
 	box-shadow: 0 0 0 0 var(--dark);
 }
 
@@ -571,6 +575,14 @@ nav a:active
   {
     left: 0%;
   }
+
+  /* contribution page */
+  .contripage p {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+	font-size: 15px
+}
 
 /* FAQ Page */
   .faq-grid{
