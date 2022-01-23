@@ -383,10 +383,42 @@ nav a:active
 }
 
 
+/* Contact us Page */
+.contactpage h2
+{
+	padding: 50px 1.5%;
+	font-size: 50px;
+	text-align: left;
+}
+
+.contactpage p {
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+	text-align: left;
+	float: left;
+	font-size: 25px;
+	width: 50%;
+}
+
+.disclogo{
+	float: right;
+	background-color: var(--secc);
+	padding: 5px 10px 5px 10px;
+	border-radius: 10px;
+	width: 30%;
+	margin-right: 5%;
+	box-shadow: 0 0 0 0 var(--dark);
+}
+
+.contactpage a :hover{
+	background-color: var(--dark);
+}
+
 /* Footer part */
 .logo{
 	max-width: fit-content;
    max-height: 80px;
+	width: auto;
    padding-top: 20px;
    margin-bottom: 20px;
    margin-left: 1.5%;
