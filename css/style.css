@@ -296,6 +296,12 @@ nav a:active
 	color: var(--dark);
 }
 
+.idea
+{
+	font-size: 23px;
+	margin-top: 5.5%;
+}
+
 .projpage .submitbtn
 {
 	width: 50%;
