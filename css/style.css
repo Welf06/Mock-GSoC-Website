@@ -392,6 +392,7 @@ nav a:active
 }
 
 .contactpage p {
+	margin-top: 0;
 	padding-left: 1.5%;
 	padding-right: 1.5%;
 	text-align: left;
@@ -445,7 +446,7 @@ nav a:active
 /* mobile properties */
 
 
-@media(max-width: 992px) 
+@media(max-width: 1024px) 
 {	
 	.navbar
 	{
@@ -626,4 +627,33 @@ nav a:active
 		width: 90%;
 		padding-left: 16%;
 	 }
+}
+
+@media(max-width: 500px) {
+	.contactpage h2
+{
+	padding: 50px 1.5%;
+	font-size: 50px;
+	text-align: center;
+}
+	.contactpage p {
+		margin-top: 0;
+		padding-left: 1.5%;
+		padding-right: 1.5%;
+		text-align: center;
+		float: left;
+		font-size: 25px;
+		width: 100%;
+	}
+	
+	.disclogo{
+		float: right;
+		background-color: var(--secc);
+		padding: 5px 10px 5px 10px;
+		border-radius: 10px;
+		width: 70%;
+		margin-right: 15%;
+		margin-top: 5%;
+		box-shadow: 0 0 0 0 var(--dark);
+	}
 }
