@@ -490,6 +490,10 @@ nav a:active
    width: 100%;
 }
 
+.end a :hover{
+   color: #ffffff;
+}
+
 .logos{
    float: right;
    padding-top: 30px;
