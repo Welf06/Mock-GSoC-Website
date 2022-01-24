@@ -354,12 +354,12 @@ nav a:active
 .button {
 	background-color: var(--secc);
 	text-align: center;
-	width: 40%;
+	width: 38%;
 	min-width: 300px;
 	margin-top: 25px;
-	margin-left: 30%;
+	margin-left: 31%;
 	height: 99%;
-	padding: 10px 15px 10px 15px;
+	padding: 30px 10px 30px 10px;
 	border-radius: 10px;
 	font-size: 40px;
 	color: var(--light);
