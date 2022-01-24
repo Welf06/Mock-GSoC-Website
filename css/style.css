@@ -828,14 +828,14 @@ nav a:active
 	{
 		padding-top: 10px;
 		margin-top: 10px;		
-		padding-left: 37.5%;
+		padding-left: 34.9%;
 		padding-right: 100%;
 	}
 
 	.navbar .list
 	{
 		padding-left: auto;
-		padding-left: 18%;
+		padding-left: 14%;
 		padding-right: 100%;
 		padding-top: 0%;
 	}
@@ -859,7 +859,7 @@ nav a:active
 	.navbar .list
 	{
 		padding-left: auto;
-		margin-left: -15px;	
+		margin-left: -35px;	
 	}
 	
 
