@@ -544,7 +544,7 @@ nav a:active
 		margin: 0 10px;
 		padding: 0 17px;
 	}
-	
+
 	.projpage .submitbtn
 	{
 		width: 100%;
@@ -654,10 +654,12 @@ nav a:active
   }
   .logo{
 	display: block;
-	width: auto;
- 	margin-left: 30%;
+	width: 50%;
+	height: auto;
+	max-height: none;
+  	margin-left: 25%;
   	margin-right: auto;
-	}
+}
 .logos{
 	padding-top: 0;
 	width: 70%;
@@ -665,7 +667,25 @@ nav a:active
  }
 }
 
+@media(max-width: 700px){
+	.logo{
+		display: block;
+		width: 60%;
+		height: auto;
+		max-height: none;
+		  margin-left: 20%;
+		  margin-right: auto;
+	
+}
+.logos{
+	padding-top: 0;
+	font-size: 15px;
 
+	margin-left: 10%;
+	margin-right: 10%;
+	float: none;
+	width: 80%;
+ }
 
 @media(max-width: 500px) 
 {	
@@ -744,9 +764,10 @@ nav a:active
 
 	.logo{
 		display: block;
-		width: auto;
-	  margin-left: 10%;
-	  margin-right: auto;
+	width: 70%;
+  	margin-left: 15%;
+	  height: auto;
+  	margin-right: auto;
 	}
 	.logos{
 		float: none;
