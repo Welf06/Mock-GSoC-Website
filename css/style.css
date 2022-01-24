@@ -79,16 +79,11 @@ nav a:active
 	border-radius: 10px;
 }
 
-#particles-js {
-	background-color: #151019;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-}
 
 .landing 
 {
+	background-image: url("../images/1567666.png");
+	background-size: cover;
 	min-height: 600px;
 	color: var(--light);
 	text-align: center;
@@ -672,6 +667,15 @@ nav a:active
 	  margin-bottom: 30px;
 	  width: 100%;
   }
+
+  .faq-q-card h3{
+	padding-top: 10px;
+}
+
+  .faq-a-card h3{
+	  padding-top: 10px;
+  }
+  
   .contactpage h2{
 	font-family: 'Lexend Deca', sans-serif;
 	  padding-top: 30px;
@@ -764,6 +768,13 @@ nav a:active
 	width: 350px;
 }
 
+.faq-a-card p{
+	font-size: 15px;
+}
+
+.faq-q-card p{
+	font-size: 15px;
+}
 }
 
 
@@ -814,6 +825,13 @@ nav a:active
 		padding: 15px 0;
 	}
 	
+	.faq-a-card p{
+		font-size: 15px;
+	}
+	
+	.faq-q-card p{
+		font-size: 15px;
+	}
 	.disclogo{
 		float: right;
 		background-color: var(--secc);
