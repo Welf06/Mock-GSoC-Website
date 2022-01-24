@@ -107,6 +107,7 @@ nav a:active
 }
 .landing .text h1
 {
+	font-family: 'Lexend Deca', sans-serif;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	font-size: 85px;
@@ -251,6 +252,7 @@ nav a:active
 
 .projpage h1
 {
+	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 50px;
 }
@@ -282,12 +284,14 @@ nav a:active
 .card h3
 {
 	padding-bottom: 10px;
+	font-size: 30px;
 }
 
 .card p
 {
 	padding-bottom: 20px;
 	padding-top: 5px;
+	font-size: 15px;
 }
 
 .projpage a
@@ -333,6 +337,7 @@ nav a:active
 
 .contripage h2
 {
+	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 50px;
 	color: var(--light);
@@ -346,20 +351,18 @@ nav a:active
 	font-size: 25px
 }
 
-.contripage .button{
+.button {
 	background-color: var(--secc);
 	text-align: center;
 	width: 40%;
 	min-width: 300px;
-	margin-top: 10px;
+	margin-top: 25px;
 	margin-left: 30%;
-	height: 100%;
-	padding: 5px 10px 5px 10px;
+	height: 99%;
+	padding: 10px 15px 10px 15px;
 	border-radius: 10px;
-	font-size: 22px;
+	font-size: 40px;
 	color: var(--light);
-	margin-top: 30px;
-	margin-bottom: 12px;
 }
 
 .contripage a :hover{
@@ -375,23 +378,11 @@ nav a:active
 }
 
 .faqpage h2{
+	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 50px;
 	color: var(--light);
 	text-align: center;
-}
-
-.faq-grid h3
-{
-	padding-top: 2%;
-	padding-left: 1.5%;
-}
-
-.faq-grid p
-{
-	padding-bottom: 2%;
-	padding-left: 2%;
-	padding-right: 2%;
 }
 
 .faq-grid{
@@ -429,6 +420,7 @@ nav a:active
 	border-radius: 15px;
 	margin-bottom: 1%;
 	padding-left: 10px;
+	font-size: 20px;
 }
 
 .faq-a-card{
@@ -436,12 +428,23 @@ nav a:active
 	border-radius: 15px;
 	margin-bottom: 3%;
 	padding-left: 10px;
+	font-size: 20px;
+}
+
+.faq-q-card p {
+	padding-bottom: 10px;
+}
+
+
+.faq-a-card p {
+	padding-bottom: 10px;
 }
 
 
 /* Contact us Page */
 .contactpage h2
 {
+	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 50px;
 	text-align: left;
@@ -452,8 +455,8 @@ nav a:active
 	padding-left: 1.5%;
 	padding-right: 1.5%;
 	text-align: left;
+	font-size: 30px;
 	float: left;
-	font-size: 25px;
 	width: 50%;
 }
 
@@ -488,10 +491,6 @@ nav a:active
    float: left;
    margin-top: 3%;
    width: 100%;
-}
-
-.end a :hover{
-   color: #ffffff;
 }
 
 .logos{
@@ -529,6 +528,7 @@ nav a:active
 
 	.about h1
 	{
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 30px;
 	}
 
@@ -570,12 +570,11 @@ nav a:active
 		margin: 0;
 		margin-top: 40px;
 		border-radius: 10px;
-		font-size: 20px;
 	}
 
 	.landing .betalab img
 	{	
-		width: 500px;
+		width: 300px;
 	}
 
 
@@ -617,6 +616,7 @@ nav a:active
   /* contribution page */
   .contripage h2
   {
+	font-family: 'Lexend Deca', sans-serif;
 	  font-size: 35px;
 	  padding: 20px;
   }
@@ -631,7 +631,6 @@ nav a:active
 {
 	justify-content: center;
 	font-size: 20px;
-	margin-left: 30%;
 }
 
 /* FAQ Page */
@@ -668,6 +667,7 @@ nav a:active
 	  width: 100%;
   }
   .contactpage h2{
+	font-family: 'Lexend Deca', sans-serif;
 	  padding-top: 30px;
   }
   .end{
@@ -707,39 +707,34 @@ nav a:active
 	float: none;
 	width: 80%;
  }
-}
 
-
-
-
-@media(max-width: 650px) 
+@media(max-width: 500px) 
 {	
 	.navbar
 	{
 		flex-direction: column;
-		height: 120px;
-		justify-content: space-evenly;
+		height: 150px;
 	}
 	
 	.navbar .logo
 	{
 		padding-top: 10px;
-		margin-top: 10px;		
-		padding-left: 39%;
-		padding-right: 100%;
+		margin-top: 10px;
+		margin-bottom: 0%;
+		padding-left: 35%;
+		text-align: center;
+
 	}
 
 	.navbar .list
 	{
-		padding-left: auto;
-		padding-left: 26%;
-		padding-right: 100%;
+		padding-left: 50px;
 		padding-top: 0%;
 	}
 
 	.navbar a
 	{
-		font-size: 18px;
+		font-size: 15px;
 		padding: 0 7px;
 	}
 
@@ -748,30 +743,10 @@ nav a:active
 		background-color: var(--secc);
 	}
 
-	.landing .text h3
-{
-	font-size: 20px;
-}
-.landing .text h1
-{
-	font-size: 75px;
-}
-
-.landing .betalab img
-{
-	width: 350px;
-}
-
-.contripage .button
-{
-	width: 80%;
-}
-
-
-
 
 	.contactpage h2
 {
+	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 35px;
 	text-align: center;
@@ -795,6 +770,7 @@ nav a:active
 
 	.faqpage h2
 	{
+		font-family: 'Lexend Deca', sans-serif;
 		padding: 15px 0;
 	}
 	
@@ -824,79 +800,9 @@ nav a:active
 		width: 70%;
 
 	 }
-}
+}}
 
-@media(max-width: 500px)
-{
-	.navbar .logo
-	{
-		padding-top: 10px;
-		margin-top: 10px;		
-		padding-left: 34.9%;
-		padding-right: 100%;
-	}
-
-	.navbar .list
-	{
-		padding-left: auto;
-		padding-left: 13%;
-		padding-right: 100%;
-		padding-top: 0%;
-	}
-	.contripage .button
-{
-	justify-content: center;
-	font-size: 19px;
-	margin-left: 10%;
-}
-}
-
-@media(max-width: 378px) {
-
-
-	.navbar
-	{
-		justify-content: space-evenly;
-	}
-	
-
-	.navbar .list
-	{
-		padding-left: auto;
-		margin-left: -35px;	
-	}
-	
-
-	.landing .text h3
-{
-	font-size: 20px;
-}
-.landing .text h1
-{
-	font-size: 75px;
-}
-
-.landing .betalab img
-{
-	width: 300px;
-}
-
-	.navbar .logo
-	{
-		padding-top: 10px;
-		margin-top: 10px;
-		margin-bottom: 0%;
-		padding-left: 33%;
-		text-align: center;
-
-	}
-
-	.navbar .list
-	{
-		padding-left: 18.6%;
-		padding-top: 0%;
-	}
-
+@media(max-width: 360px) {
 	.logos{
 		float: none;
 		margin-left: 10%;
