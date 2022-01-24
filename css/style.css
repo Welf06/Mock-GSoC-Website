@@ -436,6 +436,14 @@ nav a:active
 	font-size: 20px;
 }
 
+.faq-q-card h3 {
+	padding-top: 10px;
+}
+
+
+.faq-a-card h3 {
+	padding-top: 10px;
+}
 .faq-q-card p {
 	padding-bottom: 10px;
 }
@@ -712,6 +720,18 @@ nav a:active
 	margin-right: 10%;
 	float: none;
 	width: 80%;
+}
+
+ .faq-q-card p {
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
+	
+	
+	.faq-a-card p {
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
  }
 }
 @media(max-width: 650px) 
