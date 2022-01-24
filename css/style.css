@@ -1,4 +1,4 @@
-@i@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&family=Montserrat:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:wght@500&display=swap');
 
 :root
 {
@@ -27,7 +27,7 @@ body
 
 *
 {
-	font-family: 'Lexend Deca', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -107,6 +107,7 @@ nav a:active
 }
 .landing .text h1
 {
+	font-family: 'Lexend Deca', sans-serif;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	font-size: 85px;
@@ -251,6 +252,7 @@ nav a:active
 
 .projpage h1
 {
+	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 50px;
 }
@@ -282,12 +284,14 @@ nav a:active
 .card h3
 {
 	padding-bottom: 10px;
+	font-size: 30px;
 }
 
 .card p
 {
 	padding-bottom: 20px;
 	padding-top: 5px;
+	font-size: 15px;
 }
 
 .projpage a
@@ -333,6 +337,7 @@ nav a:active
 
 .contripage h2
 {
+	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 50px;
 	color: var(--light);
@@ -346,17 +351,17 @@ nav a:active
 	font-size: 25px
 }
 
-.contripage .button{
+.button {
 	background-color: var(--secc);
 	text-align: center;
 	width: 40%;
 	min-width: 300px;
-	margin-top: 10px;
+	margin-top: 25px;
 	margin-left: 30%;
-	height: 100%;
-	padding: 5px 10px 5px 10px;
+	height: 99%;
+	padding: 10px 15px 10px 15px;
 	border-radius: 10px;
-	font-size: 22px;
+	font-size: 40px;
 	color: var(--light);
 }
 
@@ -373,6 +378,7 @@ nav a:active
 }
 
 .faqpage h2{
+	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 50px;
 	color: var(--light);
@@ -414,6 +420,7 @@ nav a:active
 	border-radius: 15px;
 	margin-bottom: 1%;
 	padding-left: 10px;
+	font-size: 20px;
 }
 
 .faq-a-card{
@@ -421,12 +428,23 @@ nav a:active
 	border-radius: 15px;
 	margin-bottom: 3%;
 	padding-left: 10px;
+	font-size: 20px;
+}
+
+.faq-q-card p {
+	padding-bottom: 10px;
+}
+
+
+.faq-a-card p {
+	padding-bottom: 10px;
 }
 
 
 /* Contact us Page */
 .contactpage h2
 {
+	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 50px;
 	text-align: left;
@@ -437,8 +455,8 @@ nav a:active
 	padding-left: 1.5%;
 	padding-right: 1.5%;
 	text-align: left;
+	font-size: 30px;
 	float: left;
-	font-size: 25px;
 	width: 50%;
 }
 
@@ -510,6 +528,7 @@ nav a:active
 
 	.about h1
 	{
+		font-family: 'Lexend Deca', sans-serif;
 		font-size: 30px;
 	}
 
@@ -597,6 +616,7 @@ nav a:active
   /* contribution page */
   .contripage h2
   {
+	font-family: 'Lexend Deca', sans-serif;
 	  font-size: 35px;
 	  padding: 20px;
   }
@@ -647,6 +667,7 @@ nav a:active
 	  width: 100%;
   }
   .contactpage h2{
+	font-family: 'Lexend Deca', sans-serif;
 	  padding-top: 30px;
   }
   .end{
@@ -725,6 +746,7 @@ nav a:active
 
 	.contactpage h2
 {
+	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 35px;
 	text-align: center;
@@ -748,6 +770,7 @@ nav a:active
 
 	.faqpage h2
 	{
+		font-family: 'Lexend Deca', sans-serif;
 		padding: 15px 0;
 	}
 	
