@@ -79,11 +79,16 @@ nav a:active
 	border-radius: 10px;
 }
 
+#particles-js {
+	background-color: #151019;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
 
 .landing 
 {
-	background-image: url("../images/1567666.png");
-	background-size: cover;
 	min-height: 600px;
 	color: var(--light);
 	text-align: center;
