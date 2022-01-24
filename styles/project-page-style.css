@@ -150,8 +150,8 @@ button{
       display: grid; 
       grid-auto-rows: 1fr;
       column-gap: 9%; 
-      margin-left: 1.5%; 
-      margin-right: 1.5%;
+      margin-left: 10px; 
+      margin-right: 10px;
       grid-template-columns: none;
    }
    .box1 {
