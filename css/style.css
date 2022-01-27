@@ -89,7 +89,8 @@ nav a:active
 
 .landing 
 {
-	min-height: 600px;
+	width: 97vw;
+	height: 100vh;
 	color: var(--light);
 	text-align: center;
 }
