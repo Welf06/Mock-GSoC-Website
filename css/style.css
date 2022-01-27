@@ -704,6 +704,13 @@ nav a:active
 }
 
 @media(max-width: 700px){
+	.landing 
+{
+	width: 95vw;
+	height: 100vh;
+	color: var(--light);
+	text-align: center;
+}
 	.logo{
 		display: block;
 		width: 60%;
