@@ -92,7 +92,7 @@ nav a:active
 
 .landing .betalab
 {
-	padding-top: 140px;
+	padding-top: 180px;
 	padding-bottom: 10px;
 }
 
@@ -110,8 +110,22 @@ nav a:active
 {
 	font-family: 'Lexend Deca', sans-serif;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 75px;
 	font-size: 85px;
+}
+
+
+
+.landing .text a
+{
+	font-family: 'Lexend Deca', sans-serif;
+	text-decoration: none;
+	color: var(--light);
+	background-color: var(--dark);
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 40px;
+	border: 2px solid #fff;
 }
 
 
@@ -127,13 +141,13 @@ nav a:active
 .about h1
 {
 	font-size: 50px;
-	padding: 20px 30px;
+	padding: 50px 30px;
 }
 
 .about p
 {
 	font-size: 25px;
-	padding: 20px 40px;	
+	padding: 30px 40px;	
 }
 
 
@@ -153,7 +167,7 @@ nav a:active
 {
 	font-family: 'Lexend Deca', sans-serif;
 	color: var(--light);
-	padding: 10px;
+	padding: 50px 10px 10px;
 	font-size: 50px;
 	padding-bottom: 30px;
 }
@@ -267,43 +281,18 @@ nav a:active
 	padding-right: 15vw;
 }
 
-.projpage .grid
-{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-}
 
 .projects
 {
 	text-align: center;
 }
 
-.card
-{
-	background-color: var(--pric);
-	border-radius: 10px;
-	padding: 20px;
-	margin: 10px;
-}
 
-.card:hover
+.idea
 {
-	background-color: #00a1a8;
-}
-
-.card h3
-{
-	padding-bottom: 10px;
-	font-size: 30px;
-}
-
-.card p
-{
-	padding-bottom: 20px;
-	padding-top: 5px;
-	font-size: 15px;
-	padding-left: 15vw;
-	padding-right: 15vw;
+	font-size: 23px;
+	margin-bottom: 2.2%;
+	padding: 1% 0% 3%;
 }
 
 .projpage a
@@ -312,20 +301,15 @@ nav a:active
 	color: var(--dark);
 }
 
-.idea
-{
-	font-size: 23px;
-	margin-top: 3.2%;
-}
-
 .projpage .submitbtn
 {
 	width: 50%;
 	background-color: var(--pric);
 	border-radius: 5px;
-	padding: 2.5%;
-	margin: 3%;	
-	font-size: 22px;
+	padding: 1%;
+	margin: auto;
+	margin-bottom: 3%;
+	font-size: 27px;
 }
 
 .projpage .submitbtn:hover
@@ -392,11 +376,11 @@ nav a:active
 	border-radius: 15px;
 	margin-bottom: 3%;
 	padding-left: 10px;
-	font-size: 20px;
 }
 
 .faq-q-card h3 {
 	padding-top: 10px;
+	padding-left: 2%;
 }
 
 
@@ -405,11 +389,15 @@ nav a:active
 }
 .faq-q-card p {
 	padding-bottom: 10px;
+	margin-bottom: 8px;
+	padding-right: ;
 }
 
 
 .faq-a-card p {
 	padding-bottom: 10px;
+	
+	font-size: 20px;
 }
 
 
@@ -420,6 +408,7 @@ nav a:active
 	padding: 50px 1.5%;
 	font-size: 50px;
 	text-align: left;
+	padding-left: 15vw;
 }
 
 .contactpage p {
@@ -430,6 +419,7 @@ nav a:active
 	font-size: 30px;
 	float: left;
 	width: 50%;
+	padding-left: 15vw;
 }
 
 .disclogo{
@@ -438,9 +428,10 @@ nav a:active
 	padding: 15px 20px 15px 20px;
 	border-radius: 10px;
 	width: 20%;
-	margin-right: 8%;
+	margin-right: 18%;
 	box-shadow: 0 0 0 0 var(--dark);
 }
+
 
 .contactpage a :hover{
 	background-color: var(--dark);
@@ -495,18 +486,21 @@ nav a:active
 
 	.landing .betalab
 	{
-		padding-top: 180px;
+		padding-top: 250px;
 	}
 
 	.about h1
 	{
 		font-family: 'Lexend Deca', sans-serif;
-		font-size: 30px;
+		font-size: 40px;
+		padding: 0%;
+		padding: 60px 0% 30px;
 	}
 
 	.about p
 	{
-		font-size: 15px;
+		font-size: 18px;
+		padding: 0%;
 	}
 
 	.about
@@ -519,22 +513,13 @@ nav a:active
 		width: 100%;
 	}
 
-	.projpage .grid
-	{
-		grid-template-columns: repeat(1, 1fr);
-	}	
-
-	.card
-	{
-		width: 100%;
-		margin-left: 0;
-	}
-
 	.container
 	{
 		margin: 0 10px;
 		padding: 0 17px;
 	}
+
+	
 
 	.projpage .submitbtn
 	{
@@ -542,6 +527,7 @@ nav a:active
 		margin: 0;
 		margin-top: 40px;
 		border-radius: 10px;
+		margin-bottom: 7%;
 	}
 
 	.landing .betalab img
@@ -607,6 +593,9 @@ nav a:active
 }
 
 /* FAQ Page */
+
+	
+
   .faq-grid{
 	  display: block;
   }
@@ -639,10 +628,18 @@ nav a:active
 	  margin-bottom: 30px;
 	  width: 100%;
   }
-  .contactpage h2{
-	font-family: 'Lexend Deca', sans-serif;
-	  padding-top: 30px;
+  .contactpage h2
+  {
+	margin-top: 0;
+	padding-top: 0;
   }
+
+  .contactpage p
+	{
+		font-size: 24px;
+	}
+
+  
   .end{
 	  text-align: center;
   }
@@ -698,6 +695,10 @@ nav a:active
 		padding-bottom: 10px;
 		font-size: 15px;
 	}
+
+	
+
+	
  }
 
 @media(max-width: 650px) 
@@ -715,6 +716,7 @@ nav a:active
 		margin-top: 10px;		
 		padding-left: 39%;
 		padding-right: 100%;
+		margin-left: 2.8%;
 	}
 
 	.navbar .list
@@ -750,6 +752,41 @@ nav a:active
 	width: 350px;
 }
 
+
+.projpage .submitbtn
+{
+	padding: 2%;
+}
+
+	.contactpage h2
+{
+	padding: 50px 1.5%;
+	font-size: 55px;
+	text-align: center;
+}
+	.contactpage p {
+		margin-top: 0;
+		padding-left: 2%;
+		padding-right: 2%;
+		text-align: center;
+		font-size: 20px;
+		width: 100%;
+	}
+	.disclogo{
+		
+		background-color: var(--secc);
+		padding: 5px 10px 5px 0px;
+		border-radius: 10px;
+		width: 50%;
+		justify-self: center;
+		justify-content: space-evenly;
+	
+		margin-top: 5%;
+		box-shadow: 0 0 0 0 var(--dark);
+	}
+
+
+
 }
 
 
@@ -758,23 +795,24 @@ nav a:active
 	.navbar .logo
 	{
 		padding-top: 10px;
-		margin-top: 10px;		
+		margin-top: 10px;	
+		margin-left: 5%;	
 		padding-left: 34.9%;
 		padding-right: 100%;
 	}
 
 	.navbar .list
 	{
-		padding-left: auto;
-		padding-left: 14%;
+		padding-left: 3%;
 		padding-right: 100%;
 		padding-top: 0%;
+		margin-left: 20%;
 	}
 	.contactpage h2
 {
 	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
-	font-size: 35px;
+	font-size: 50px;
 	text-align: center;
 }
 	.contactpage p {
@@ -797,11 +835,11 @@ nav a:active
 	.faqpage h2
 	{
 		font-family: 'Lexend Deca', sans-serif;
-		padding: 15px 0;
+		padding: 50px 0 30px;
 	}
 	
 	.disclogo{
-		float: right;
+		
 		background-color: var(--secc);
 		padding: 5px 10px 5px 10px;
 		border-radius: 10px;
@@ -840,8 +878,7 @@ nav a:active
 
 	.navbar .list
 	{
-		padding-left: auto;
-		margin-left: -35px;	
+		justify-content: center;
 	}
 	
 
@@ -878,6 +915,9 @@ nav a:active
 }
 
 @media(max-width: 360px) {
+
+	
+
 	.logos{
 		float: none;
 		margin-left: 10%;
