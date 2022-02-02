@@ -95,15 +95,15 @@ a
 
 .landing 
 {
-	width: 94vw;
-	height: 100vh;
+	width: 97vw;
+	height: 94vh;
 	color: var(--light);
 	text-align: center;
 }
 
 .landing .betalab
 {
-	padding-top: 180px;
+	padding-top: 120px;
 	padding-bottom: 10px;
 }
 
@@ -196,7 +196,7 @@ a
   content: "";
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: #eeeeee;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -348,36 +348,14 @@ a
 	background-color: var(--secc);
 	display: grid;
 	width: 100%;
-}
-.faq-card1{
-	float: left;
-	width: 90%;
-	background-color: var(--secc);
-	margin-left: 4%;
-	margin-right: 3%;
-	grid-row: 1;
+	padding-left: 15vw;
+	padding-right: 15vw;
 }
 
-.faq-card2{
-	float: left;
-	width: 90%;
-	background-color: var(--secc);
-	margin-left: 4%;
-	margin-right: 3%;
-	grid-row: 2;
-}
-.faq-card3{
-	float: left;
-	width: 90%;
-	background-color: var(--secc);
-	margin-left: 4%;
-	margin-right: 3%;
-	grid-row: 3;
-}
 .faq-q-card{
 	background-color: var(--pric);
 	border-radius: 15px;
-	margin-bottom: 1%;
+	margin-bottom: 0.5%;
 	padding-left: 10px;
 	font-size: 20px;
 }
@@ -391,7 +369,6 @@ a
 
 .faq-q-card h3 {
 	padding-top: 10px;
-	padding-left: 2%;
 }
 
 
@@ -401,13 +378,14 @@ a
 .faq-q-card p {
 	padding-bottom: 10px;
 	margin-bottom: 8px;
+	padding-bottom: 20px;
 }
 
 
 .faq-a-card p {
 	padding-bottom: 10px;
-	
 	font-size: 20px;
+	padding-bottom: 20px;
 }
 
 
