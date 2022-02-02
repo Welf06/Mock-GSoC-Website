@@ -15,15 +15,7 @@ body
 }
 
 
-.flex
-{
-	display: flex;
-}
 
-.flexmenu
-{
-	display: flex;
-}
 
 *
 {
@@ -32,51 +24,65 @@ body
 	padding: 0;
 	margin: 0;
 }
+ul
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+}
+
+.fl
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.containe
+{
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 0 40px;
+}
+
+.navbar h1
+{
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 10px 0;
+}
 
 .navbar
 {
 	background-color: var(--dark);
-	color: var(--light);
-	width: 100%;
-	height: 75px;
+	color: #fff;
+	height: 85px;
+}
+
+.navbar .fl
+{
 	justify-content: space-between;
-	position: fixed;
-	z-index: 2;
 }
 
 .navbar ul
 {
-	list-style: none;
+	display: flex;
 }
 
 .navbar a
 {
-	text-decoration: none;
-	color: var(--light);
+	color: #fff;
 	padding: 10px;
 	margin: 0 5px;
-	height: 100%;
 }
 
-nav .list
-{
-	display: flex;
-	padding: 20px 50px;
-	font-size: 20px;
-}
 
-.navbar .logo
+.navbar a:hover
 {
-	font-size: 30px;
-	padding: 15px 70px;
-}
-
-nav a:hover,
-nav a:active
-{
-	background-color: var(--light);
-	color: var(--dark);
-	border-radius: 10px;
+	border-bottom: 2px #fff solid;
 }
 
 #particles-js {
@@ -89,14 +95,15 @@ nav a:active
 
 .landing 
 {
-	min-height: 600px;
+	width: 94vw;
+	height: 100vh;
 	color: var(--light);
 	text-align: center;
 }
 
 .landing .betalab
 {
-	padding-top: 140px;
+	padding-top: 180px;
 	padding-bottom: 10px;
 }
 
@@ -114,28 +121,44 @@ nav a:active
 {
 	font-family: 'Lexend Deca', sans-serif;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 75px;
 	font-size: 85px;
+}
+
+
+
+.landing .text a
+{
+	font-family: 'Lexend Deca', sans-serif;
+	text-decoration: none;
+	color: var(--light);
+	background-color: var(--dark);
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 40px;
+	border: 2px solid #fff;
 }
 
 
 .about 
 {
-	width: 50%;
+	width: 100%;
 	background-color: var(--pric);
 	padding-bottom: 60px;
+	padding-left: 15vw;
+	padding-right: 15vw;
 }
 
 .about h1
 {
 	font-size: 50px;
-	padding: 20px 30px;
+	padding: 50px 30px;
 }
 
 .about p
 {
 	font-size: 25px;
-	padding: 20px 40px;	
+	padding: 30px 40px;	
 }
 
 
@@ -146,14 +169,18 @@ nav a:active
   background-color: var(--secc);
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  width: 50%;
+  width: 100%;
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
 
 .time h1
 {
 	font-family: 'Lexend Deca', sans-serif;
 	color: var(--light);
-	padding: 10px;
+	padding: 50px 10px 10px;
+	font-size: 50px;
+	padding-bottom: 30px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -161,6 +188,7 @@ nav a:active
   position: relative;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -260,43 +288,22 @@ nav a:active
 	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
 	font-size: 50px;
+	padding-left: 15vw;
+	padding-right: 15vw;
 }
 
-.projpage .grid
-{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-}
 
 .projects
 {
 	text-align: center;
 }
 
-.card
-{
-	background-color: var(--pric);
-	border-radius: 10px;
-	padding: 20px;
-	margin: 10px;
-}
 
-.card:hover
+.idea
 {
-	background-color: #00a1a8;
-}
-
-.card h3
-{
-	padding-bottom: 10px;
-	font-size: 30px;
-}
-
-.card p
-{
-	padding-bottom: 20px;
-	padding-top: 5px;
-	font-size: 15px;
+	font-size: 23px;
+	margin-bottom: 2.2%;
+	padding: 1% 0% 3%;
 }
 
 .projpage a
@@ -305,73 +312,20 @@ nav a:active
 	color: var(--dark);
 }
 
-.idea
-{
-	font-size: 23px;
-	margin-top: 3.2%;
-}
-
 .projpage .submitbtn
 {
 	width: 50%;
 	background-color: var(--pric);
 	border-radius: 5px;
-	padding: 2.5%;
-	margin: 3%;	
-	font-size: 22px;
+	padding: 1%;
+	margin: auto;
+	margin-bottom: 3%;
+	font-size: 27px;
 }
 
 .projpage .submitbtn:hover
 {
 	background-color: #00a1a8;
-}
-
-
-/* Contribution page */
-.contripage{
-	margin-top: 50px;
-	background-color: var(--pric);
-	text-align: center;
-	padding-bottom: 30px;
-}
-
-.contripage a
-{
-	text-decoration: none;
-}
-
-.contripage h2
-{
-	font-family: 'Lexend Deca', sans-serif;
-	padding: 50px 1.5%;
-	font-size: 50px;
-	color: var(--light);
-	text-align: left;
-}
-
-.contripage p {
-	padding-left: 2%;
-	padding-right: 2%;
-	text-align: justify;
-	font-size: 25px
-}
-
-.button {
-	background-color: var(--secc);
-	text-align: center;
-	width: 38%;
-	min-width: 300px;
-	margin-top: 25px;
-	margin-left: 31%;
-	height: 99%;
-	padding: 30px 10px 30px 10px;
-	border-radius: 10px;
-	font-size: 40px;
-	color: var(--light);
-}
-
-.contripage a :hover{
-	background-color: var(--dark);
 }
 
 
@@ -433,11 +387,11 @@ nav a:active
 	border-radius: 15px;
 	margin-bottom: 3%;
 	padding-left: 10px;
-	font-size: 20px;
 }
 
 .faq-q-card h3 {
 	padding-top: 10px;
+	padding-left: 2%;
 }
 
 
@@ -446,11 +400,14 @@ nav a:active
 }
 .faq-q-card p {
 	padding-bottom: 10px;
+	margin-bottom: 8px;
 }
 
 
 .faq-a-card p {
 	padding-bottom: 10px;
+	
+	font-size: 20px;
 }
 
 
@@ -461,6 +418,7 @@ nav a:active
 	padding: 50px 1.5%;
 	font-size: 50px;
 	text-align: left;
+	padding-left: 15vw;
 }
 
 .contactpage p {
@@ -471,6 +429,7 @@ nav a:active
 	font-size: 30px;
 	float: left;
 	width: 50%;
+	padding-left: 15vw;
 }
 
 .disclogo{
@@ -479,9 +438,10 @@ nav a:active
 	padding: 15px 20px 15px 20px;
 	border-radius: 10px;
 	width: 20%;
-	margin-right: 8%;
+	margin-right: 18%;
 	box-shadow: 0 0 0 0 var(--dark);
 }
+
 
 .contactpage a :hover{
 	background-color: var(--dark);
@@ -521,13 +481,6 @@ nav a:active
 @media(max-width: 1000px) 
 {	
 	
-	.navbar .logo
-	{
-		padding-top: 13px;
-		padding-left: 80px;
-		margin: 0px;
-	}
-	
 
 	.flex
 	{
@@ -536,18 +489,21 @@ nav a:active
 
 	.landing .betalab
 	{
-		padding-top: 180px;
+		padding-top: 130px;
 	}
 
 	.about h1
 	{
 		font-family: 'Lexend Deca', sans-serif;
-		font-size: 30px;
+		font-size: 40px;
+		padding: 0%;
+		padding: 60px 0% 30px;
 	}
 
 	.about p
 	{
-		font-size: 15px;
+		font-size: 18px;
+		padding: 0%;
 	}
 
 	.about
@@ -560,22 +516,13 @@ nav a:active
 		width: 100%;
 	}
 
-	.projpage .grid
-	{
-		grid-template-columns: repeat(1, 1fr);
-	}	
-
-	.card
-	{
-		width: 100%;
-		margin-left: 0;
-	}
-
 	.container
 	{
 		margin: 0 10px;
 		padding: 0 17px;
 	}
+
+	
 
 	.projpage .submitbtn
 	{
@@ -583,12 +530,13 @@ nav a:active
 		margin: 0;
 		margin-top: 40px;
 		border-radius: 10px;
+		margin-bottom: 7%;
 	}
 
 	.landing .betalab img
-	{	
-		width: 300px;
-	}
+{
+	width: 550px;
+}
 
 
 /* Place the timelime to the left */
@@ -648,6 +596,9 @@ nav a:active
 }
 
 /* FAQ Page */
+
+	
+
   .faq-grid{
 	  display: block;
   }
@@ -680,10 +631,18 @@ nav a:active
 	  margin-bottom: 30px;
 	  width: 100%;
   }
-  .contactpage h2{
-	font-family: 'Lexend Deca', sans-serif;
-	  padding-top: 30px;
+  .contactpage h2
+  {
+	margin-top: 0;
+	padding-top: 0;
   }
+
+  .contactpage p
+	{
+		font-size: 24px;
+	}
+
+  
   .end{
 	  text-align: center;
   }
@@ -703,6 +662,54 @@ nav a:active
 }
 
 @media(max-width: 700px){
+
+	.navbar
+	{
+		height: 110px;
+	}
+
+	.navbar .fl
+	{
+		flex-direction: column;
+	}
+
+	.navbar ul
+	{
+		padding: 10px;
+		background-color: rgba(0, 0, 0, 0.1);
+		border-radius: 20px;
+		margin-top: 0;
+	}
+	nav
+	{
+		padding: 0 0 15px;
+	}
+
+
+	.navbar h1
+	{
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+
+
+	.landing 
+{
+	width: 95vw;
+	height: 100vh;
+	color: var(--light);
+	text-align: center;
+}
+
+
+.landing .betalab img
+{
+	width: 550px;
+}
+
+
 	.logo{
 		display: block;
 		width: 60%;
@@ -732,43 +739,15 @@ nav a:active
 		padding-bottom: 10px;
 		font-size: 15px;
 	}
+
+	
+
+	
  }
 
 @media(max-width: 650px) 
 {	
-	.navbar
-	{
-		flex-direction: column;
-		height: 120px;
-		justify-content: space-evenly;
-	}
 	
-	.navbar .logo
-	{
-		padding-top: 10px;
-		margin-top: 10px;		
-		padding-left: 39%;
-		padding-right: 100%;
-	}
-
-	.navbar .list
-	{
-		padding-left: auto;
-		padding-left: 26%;
-		padding-right: 100%;
-		padding-top: 0%;
-	}
-
-	.navbar a
-	{
-		font-size: 18px;
-		padding: 0 7px;
-	}
-
-	.navbar li
-	{
-		background-color: var(--secc);
-	}
 
 	.landing .text h3
 {
@@ -784,31 +763,52 @@ nav a:active
 	width: 350px;
 }
 
+
+.projpage .submitbtn
+{
+	padding: 2%;
+}
+
+	.contactpage h2
+{
+	padding: 50px 1.5%;
+	font-size: 55px;
+	text-align: center;
+}
+	.contactpage p {
+		margin-top: 0;
+		padding-left: 2%;
+		padding-right: 2%;
+		text-align: center;
+		font-size: 20px;
+		width: 100%;
+	}
+	.disclogo{
+		
+		background-color: var(--secc);
+		padding: 5px 10px 5px 0px;
+		border-radius: 10px;
+		width: 50%;
+		justify-self: center;
+		justify-content: space-evenly;
+	
+		margin-top: 5%;
+		box-shadow: 0 0 0 0 var(--dark);
+	}
+
+
+
 }
 
 
 @media(max-width: 500px) 
 {	
-	.navbar .logo
-	{
-		padding-top: 10px;
-		margin-top: 10px;		
-		padding-left: 34.9%;
-		padding-right: 100%;
-	}
-
-	.navbar .list
-	{
-		padding-left: auto;
-		padding-left: 14%;
-		padding-right: 100%;
-		padding-top: 0%;
-	}
+	
 	.contactpage h2
 {
 	font-family: 'Lexend Deca', sans-serif;
 	padding: 50px 1.5%;
-	font-size: 35px;
+	font-size: 50px;
 	text-align: center;
 }
 	.contactpage p {
@@ -831,11 +831,11 @@ nav a:active
 	.faqpage h2
 	{
 		font-family: 'Lexend Deca', sans-serif;
-		padding: 15px 0;
+		padding: 50px 0 30px;
 	}
 	
 	.disclogo{
-		float: right;
+		
 		background-color: var(--secc);
 		padding: 5px 10px 5px 10px;
 		border-radius: 10px;
@@ -866,19 +866,7 @@ nav a:active
 @media(max-width: 378px) {
 
 
-	.navbar
-	{
-		justify-content: space-evenly;
-	}
 	
-
-	.navbar .list
-	{
-		padding-left: auto;
-		margin-left: -35px;	
-	}
-	
-
 	.landing .text h3
 {
 	font-size: 20px;
@@ -893,25 +881,13 @@ nav a:active
 	width: 300px;
 }
 
-	.navbar .logo
-	{
-		padding-top: 10px;
-		margin-top: 10px;
-		margin-bottom: 0%;
-		padding-left: 33%;
-		text-align: center;
-
-	}
-
-	.navbar .list
-	{
-		padding-left: 18.6%;
-		padding-top: 0%;
-	}
 
 }
 
 @media(max-width: 360px) {
+
+	
+
 	.logos{
 		float: none;
 		margin-left: 10%;
