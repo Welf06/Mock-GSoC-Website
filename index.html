@@ -1,200 +1,899 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="portfolio">
-  	<meta name="keywords" content="Mock GSoC, mock, open source">
-  	<meta name="author" content="Abhinav Yadav, Ganesh Nathan">
-	<!-- Fav icon -->
-	<link rel="icon" type="image/x-icon" href="images/betalab fav icon.png">
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	<!-- JavaScript -->
-	<script src="https://kit.fontawesome.com/ac46427708.js" crossorigin="anonymous"></script>
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:wght@500&display=swap');
+
+:root
+{
+	--pric: #00ADB5;
+	--secc:#393E46;
+	--backc: #EEE;
+	--light: #fff;
+	--dark: #222831;
+}
+
+body
+{
+	background-color: var(--backc);
+}
+
+
+
+
+*
+{
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+ul
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+}
+
+.fl
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.containe
+{
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 0 40px;
+}
+
+.navbar h1
+{
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 10px 0;
+}
+
+.navbar
+{
+	background-color: var(--dark);
+	color: #fff;
+	height: 85px;
+}
+
+.navbar .fl
+{
+	justify-content: space-between;
+}
+
+.navbar ul
+{
+	display: flex;
+}
+
+.navbar a
+{
+	color: #fff;
+	padding: 10px;
+	margin: 0 5px;
+}
+
+
+.navbar a:hover
+{
+	border-bottom: 2px #fff solid;
+}
+
+#particles-js {
+	background-color: #151019;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.landing 
+{
+	width: 94vw;
+	height: 100vh;
+	color: var(--light);
+	text-align: center;
+}
+
+.landing .betalab
+{
+	padding-top: 180px;
+	padding-bottom: 10px;
+}
+
+.landing .betalab img
+{
+	width: 500px;
+}
+
+.landing .text h3
+{
+	margin-top: 50px;
+	font-size: 30px;
+}
+.landing .text h1
+{
+	font-family: 'Lexend Deca', sans-serif;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	font-size: 85px;
+}
+
+
+
+.landing .text a
+{
+	font-family: 'Lexend Deca', sans-serif;
+	text-decoration: none;
+	color: var(--light);
+	background-color: var(--dark);
+	padding: 10px 20px;
+	font-size: 20px;
+	border-radius: 40px;
+	border: 2px solid #fff;
+}
+
+
+.about 
+{
+	width: 100%;
+	background-color: var(--pric);
+	padding-bottom: 60px;
+	padding-left: 15vw;
+	padding-right: 15vw;
+}
+
+.about h1
+{
+	font-size: 50px;
+	padding: 50px 30px;
+}
+
+.about p
+{
+	font-size: 25px;
+	padding: 30px 40px;	
+}
+
+
+/*css for time line */
+
+.time 
+{
+  background-color: var(--secc);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: 100%;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.time h1
+{
+	font-family: 'Lexend Deca', sans-serif;
+	color: var(--light);
+	padding: 50px 10px 10px;
+	font-size: 50px;
+	padding-bottom: 30px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.contain {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.contain::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid var(--pric);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+.container
+{
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.projpage h1
+{
+	font-family: 'Lexend Deca', sans-serif;
+	padding: 50px 1.5%;
+	font-size: 50px;
+	padding-left: 15vw;
+	padding-right: 15vw;
+}
+
+
+.projects
+{
+	text-align: center;
+}
+
+
+.idea
+{
+	font-size: 23px;
+	margin-bottom: 2.2%;
+	padding: 1% 0% 3%;
+}
+
+.projpage a
+{
+	text-decoration: none;
+	color: var(--dark);
+}
+
+.projpage .submitbtn
+{
+	width: 50%;
+	background-color: var(--pric);
+	border-radius: 5px;
+	padding: 1%;
+	margin: auto;
+	margin-bottom: 3%;
+	font-size: 27px;
+}
+
+.projpage .submitbtn:hover
+{
+	background-color: #00a1a8;
+}
+
+
+/* FAQ Page */
+.faqpage {
+	background-color: var(--secc);
+	height: fit-content;
+	padding-bottom: 20px;
+}
+
+.faqpage h2{
+	font-family: 'Lexend Deca', sans-serif;
+	padding: 50px 1.5%;
+	font-size: 50px;
+	color: var(--light);
+	text-align: center;
+}
+
+.faq-grid{
+	background-color: var(--secc);
+	display: grid;
+	width: 100%;
+}
+.faq-card1{
+	float: left;
+	width: 90%;
+	background-color: var(--secc);
+	margin-left: 4%;
+	margin-right: 3%;
+	grid-row: 1;
+}
+
+.faq-card2{
+	float: left;
+	width: 90%;
+	background-color: var(--secc);
+	margin-left: 4%;
+	margin-right: 3%;
+	grid-row: 2;
+}
+.faq-card3{
+	float: left;
+	width: 90%;
+	background-color: var(--secc);
+	margin-left: 4%;
+	margin-right: 3%;
+	grid-row: 3;
+}
+.faq-q-card{
+	background-color: var(--pric);
+	border-radius: 15px;
+	margin-bottom: 1%;
+	padding-left: 10px;
+	font-size: 20px;
+}
+
+.faq-a-card{
+	background-color: var(--backc);
+	border-radius: 15px;
+	margin-bottom: 3%;
+	padding-left: 10px;
+}
+
+.faq-q-card h3 {
+	padding-top: 10px;
+	padding-left: 2%;
+}
+
+
+.faq-a-card h3 {
+	padding-top: 10px;
+}
+.faq-q-card p {
+	padding-bottom: 10px;
+	margin-bottom: 8px;
+}
+
+
+.faq-a-card p {
+	padding-bottom: 10px;
 	
-	<title>BoSS | Kottayam Mock Summer of Code</title>
-</head>
-<body">
-	<header>
-		<div class="navbar">
-			<div class="containe fl">
-				<h1 class="logo">BoSS</h1>
-			  <nav>
-				<ul>
-					<li><a href="#TIMELINE">Timeline</a></li>
-					<li><a href="#APPLY">Apply</a></li>
-					<li><a href="#FAQ">FAQ</a></li>
-				</ul>
-			  </nav>          
-			</div>      
-		  </div>
-	</header>
+	font-size: 20px;
+}
 
-	<div class="landing">
-		<div id="particles-js"></div>
-		<div class="container">
-			<div class="betalab">
-				<img src="./images/betalab-horizontal.png" alt="logo">
-			</div>
 
-			<div class="text">
-				<h3>Presents</h3>
-				<h1>BoSS</h1>
-				<a href="" class="discordlogo">Join <i class="fab fa-discord"></i> Discord</a>
-			</div>
-		</div>		
-	</div>
+/* Contact us Page */
+.contactpage h2
+{
+	font-family: 'Lexend Deca', sans-serif;
+	padding: 50px 1.5%;
+	font-size: 50px;
+	text-align: left;
+	padding-left: 15vw;
+}
+
+.contactpage p {
+	margin-top: 0;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+	text-align: left;
+	font-size: 30px;
+	float: left;
+	width: 50%;
+	padding-left: 15vw;
+}
+
+.disclogo{
+	float: right;
+	background-color: var(--secc);
+	padding: 15px 20px 15px 20px;
+	border-radius: 10px;
+	width: 20%;
+	margin-right: 18%;
+	box-shadow: 0 0 0 0 var(--dark);
+}
+
+
+.contactpage a :hover{
+	background-color: var(--dark);
+}
+
+/* Footer part */
+.logo{
+	max-width: fit-content;
+   max-height: 80px;
+	width: auto;
+   padding-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 1.5%;
+   padding-bottom: 5px;
+   float: left;
+}
+
+.end{
+   background-color: var(--dark);
+   float: left;
+   margin-top: 3%;
+   width: 100%;
+}
+
+.logos{
+   float: right;
+   padding-top: 30px;
+   padding-right: 1.5%;
+   padding-bottom: 5px;
+}
+
+
+
+/* mobile properties */
+
+
+@media(max-width: 1000px) 
+{	
 	
-	<div class="about">
-			<h1>What is <span class="highlight">BoSS ?</span></h1>
-			<p>Google Summer of Code is a global, online program focused on bringing new contributors into open source software development. GSoC Contributors work with an open source organization on a 12+ week programming project under the guidance of mentors. The Mock GSoC is an opportunity to let you gain valuable experience while working on something you're passsionate about in a similar way of GSoC. </p>
-			<a id="TIMELINE"></a>
-		</div>
 
- <!-- Time line page -->
-	<div class="time">
-			<h1>Timeline</h1>
-	<div class="timeline">
-  				
-  				<div class="contain left">
-    				<div class="content">
-      					<h2>heading</h2>
-      					<p>Lorem ipsum..</p>
-    				</div>
-  				</div>
+	.flex
+	{
+		flex-direction: column;
+	}
 
-  				<div class="contain right">
-    				<div class="content">
-      					<h2>heading</h2>
-      					<p>Lorem ipsum..</p>
-    				</div>
-  				</div>
+	.landing .betalab
+	{
+		padding-top: 130px;
+	}
 
-  				<div class="contain left">
-    				<div class="content">
-      					<h2>heading</h2>
-      					<p>Lorem ipsum..</p>
-    				</div>
-  				</div>
+	.about h1
+	{
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 40px;
+		padding: 0%;
+		padding: 60px 0% 30px;
+	}
 
-  				<div class="contain right">
-    				<div class="content">
-      					<h2>heading</h2>
-      					<p>Lorem ipsum..</p>
-    				</div>
-  				</div>
+	.about p
+	{
+		font-size: 18px;
+		padding: 0%;
+	}
 
-			</div> 
-		</div>	
+	.about
+	{
+		width: 100%;
+	}
 
-	<!-- Project Page -->
-	<a id="APPLY"></a>
-	<section class="projpage">
+	.time
+	{
+		width: 100%;
+	}
+
+	.container
+	{
+		margin: 0 10px;
+		padding: 0 17px;
+	}
+
+	
+
+	.projpage .submitbtn
+	{
+		width: 100%;
+		margin: 0;
+		margin-top: 40px;
+		border-radius: 10px;
+		margin-bottom: 7%;
+	}
+
+	.landing .betalab img
+{
+	width: 550px;
+}
+
+
+/* Place the timelime to the left */
+  .timeline::after 
+  {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .contain 
+  {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .contain::before 
+  {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after 
+  {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right 
+  {
+    left: 0%;
+  }
+
+  /* contribution page */
+  .contripage h2
+  {
+	font-family: 'Lexend Deca', sans-serif;
+	  font-size: 35px;
+	  padding: 20px;
+  }
+  .contripage p {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+	font-size: 15px
+}
+
+.contripage .button
+{
+	margin-top: 20px;
+	justify-content: center;
+	font-size: 25px;
+}
+
+/* FAQ Page */
+
+	
+
+  .faq-grid{
+	  display: block;
+  }
+  .faq-card1{
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-left: 0%;
+	margin-right: 0%;
+  }
+  .faq-card2{
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-left: 0%;
+	margin-right: 0%;
+  }
+  .faq-card3{
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-left: 0%;
+	margin-right: 0%;
+  }
+  .faq-q-card{
+	  margin-bottom: 15px;
+	  width: 100%;
+  }
+  .faq-a-card{
+	  margin-bottom: 30px;
+	  width: 100%;
+  }
+  .contactpage h2
+  {
+	margin-top: 0;
+	padding-top: 0;
+  }
+
+  .contactpage p
+	{
+		font-size: 24px;
+	}
+
+  
+  .end{
+	  text-align: center;
+  }
+  .logo{
+	display: block;
+	width: 50%;
+	height: auto;
+	max-height: none;
+  	margin-left: 25%;
+  	margin-right: auto;
+}
+.logos{
+	padding-top: 0;
+	width: 70%;
+	margin-right: 14%;
+ }
+}
+
+@media(max-width: 700px){
+
+	.navbar
+	{
+		height: 110px;
+	}
+
+	.navbar .fl
+	{
+		flex-direction: column;
+	}
+
+	.navbar ul
+	{
+		padding: 10px;
+		background-color: rgba(0, 0, 0, 0.1);
+		border-radius: 20px;
+		margin-top: 0;
+	}
+	nav
+	{
+		padding: 0 0 15px;
+	}
+
+
+	.navbar h1
+	{
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+
+
+	.landing 
+{
+	width: 95vw;
+	height: 100vh;
+	color: var(--light);
+	text-align: center;
+}
+
+
+.landing .betalab img
+{
+	width: 550px;
+}
+
+
+	.logo{
+		display: block;
+		width: 60%;
+		height: auto;
+		max-height: none;
+		  margin-left: 20%;
+		  margin-right: auto;
+	
+}
+.logos{
+	padding-top: 0;
+	font-size: 15px;
+
+	margin-left: 10%;
+	margin-right: 10%;
+	float: none;
+	width: 80%;
+}
+
+ .faq-q-card p {
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
+	
+	
+	.faq-a-card p {
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
+
+	
+
+	
+ }
+
+@media(max-width: 650px) 
+{	
+	
+
+	.landing .text h3
+{
+	font-size: 20px;
+}
+.landing .text h1
+{
+	font-size: 75px;
+}
+
+.landing .betalab img
+{
+	width: 350px;
+}
+
+
+.projpage .submitbtn
+{
+	padding: 2%;
+}
+
+	.contactpage h2
+{
+	padding: 50px 1.5%;
+	font-size: 55px;
+	text-align: center;
+}
+	.contactpage p {
+		margin-top: 0;
+		padding-left: 2%;
+		padding-right: 2%;
+		text-align: center;
+		font-size: 20px;
+		width: 100%;
+	}
+	.disclogo{
 		
-		<h1>Projects:</h1>
-		<div class="projects container">
-			<p class="idea">If you've got any new ideas send them to us:</p>
-			<a href="">
-			<div class="submitbtn">
-				Add Project
-			</div>
-			</a>
-		</div>		
-	</section>
-	<a id="FAQ"></a>
-	<section class="faqpage">
-		<h2>F.A.Qs</h2>
-		<section class="faq-grid">
-		<div class="faq-card1">
-			<div class="faq-q-card">
-				<h3>Q:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-			<div class="faq-a-card">
-				<h3>A:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-		</div>
-		<div class="faq-card1">
-			<div class="faq-q-card">
-				<h3>Q:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-			<div class="faq-a-card">
-				<h3>A:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-		</div>
-		<div class="faq-card2">
-			<div class="faq-q-card">
-				<h3>Q:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-			<div class="faq-a-card">
-				<h3>A:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-		</div>
-		<div class="faq-card2">
-			<div class="faq-q-card">
-				<h3>Q:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-			<div class="faq-a-card">
-				<h3>A:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-		</div>
-		<div class="faq-card3">
-			<div class="faq-q-card">
-				<h3>Q:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-			<div class="faq-a-card">
-				<h3>A:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-		</div>
-		<div class="faq-card3">
-			<div class="faq-q-card">
-				<h3>Q:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-			<div class="faq-a-card">
-				<h3>A:</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor et arcu consectetur luctus.</p>
-			</div>
-		</div>
-	</section>
-	</section>
-
-	<section class="contactpage">
-		<h2>Contact Us</h2>
-		<p>You can hop on to our discord server to clarify your queries</p>
-		<a href=""><img src="images/discord-logo.png" alt="Discord logo" class="disclogo"></a>
-	</section>
+		background-color: var(--secc);
+		padding: 5px 10px 5px 0px;
+		border-radius: 10px;
+		width: 50%;
+		justify-self: center;
+		justify-content: space-evenly;
+	
+		margin-top: 5%;
+		box-shadow: 0 0 0 0 var(--dark);
+	}
 
 
-	<section class="end">
-		<img src="images/betalab-horizontal.png" alt="Betalabs logo" class="logo">
-		<section class="logos" >
-			<a href="" style="color: #eeeeee;  text-decoration: none;"> 
-				<i class="fas fa-envelope fa-2x center" style="padding-right: 30px;"></i>
-			</a>
-			<a href="" style="color: #eeeeee;  text-decoration: none;"> 
-				<i class="fab fa-github fa-2x center" style="padding-right: 30px;"></i>
-			</a>
-			<a href="" style="color: #eeeeee;  text-decoration: none;">
-			<i class="fab fa-discord fa-2x center" style="padding-right: 30px;"></i>
-			</a>
-			<a href="" style="color: #eeeeee; text-decoration: none;" style="margin-right: 1.5%;"> 
-				<i class="fab fa-youtube fa-2x center" ></i>
-			</a>
-		</section>
-	</section>
-	<script src="scripts/particles.min.js"></script>
-	<script src="scripts/main.js"></script>
-</body>
-</html>
+
+}
+
+
+@media(max-width: 500px) 
+{	
+	
+	.contactpage h2
+{
+	font-family: 'Lexend Deca', sans-serif;
+	padding: 50px 1.5%;
+	font-size: 50px;
+	text-align: center;
+}
+	.contactpage p {
+		margin-top: 0;
+		padding-left: 2%;
+		padding-right: 2%;
+		text-align: center;
+		float: left;
+		font-size: 20px;
+		width: 100%;
+	}
+
+	.contripage .button
+{
+	justify-content: center;
+	margin-left: 39px;
+	font-size: 20px;
+}
+
+	.faqpage h2
+	{
+		font-family: 'Lexend Deca', sans-serif;
+		padding: 50px 0 30px;
+	}
+	
+	.disclogo{
+		
+		background-color: var(--secc);
+		padding: 5px 10px 5px 10px;
+		border-radius: 10px;
+		width: 70%;
+		margin-right: 15%;
+		margin-top: 5%;
+		box-shadow: 0 0 0 0 var(--dark);
+	}
+
+	.logo{
+		display: block;
+	width: 70%;
+  	margin-left: 15%;
+	  height: auto;
+  	margin-right: auto;
+	}
+	.logos{
+		float: none;
+		margin-left: 16%;
+		padding: 0 0 0 0;
+		font-size: 15px;
+		width: 70%;
+
+	 }
+}
+
+
+@media(max-width: 378px) {
+
+
+	
+	.landing .text h3
+{
+	font-size: 20px;
+}
+.landing .text h1
+{
+	font-size: 75px;
+}
+
+.landing .betalab img
+{
+	width: 300px;
+}
+
+
+}
+
+@media(max-width: 360px) {
+
+	
+
+	.logos{
+		float: none;
+		margin-left: 10%;
+		margin-right: 10%;
+		padding: 0 0 0 0;
+		font-size: 15px;
+		width: 80%;
+	 }
+}
