@@ -161,7 +161,13 @@ a
 	padding: 30px 40px;	
 }
 
-
+.highlight {
+	color: #fff;
+	text-shadow: -2px 2px 0 #000,
+                          2px 2px 0 #000,
+                         2px -2px 0 #000,
+                        -2px -2px 0 #000;
+}
 /*css for time line */
 
 .time 
