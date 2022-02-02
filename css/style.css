@@ -48,6 +48,7 @@ a
 	padding: 0 40px;
 }
 
+
 .navbar h1
 {
 	font-weight: 300;
@@ -60,6 +61,9 @@ a
 	background-color: var(--dark);
 	color: #fff;
 	height: 85px;
+	width: 100%;
+	position: fixed;
+	z-index: 4;
 }
 
 .navbar .fl
