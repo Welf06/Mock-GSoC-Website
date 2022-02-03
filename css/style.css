@@ -488,7 +488,7 @@ a
 
 	.landing .betalab
 	{
-		padding-top: 130px;
+		padding-top: 20vh;
 	}
 
 	.about h1
@@ -515,6 +515,8 @@ a
 	.time
 	{
 		width: 100%;
+		padding-left: 10vw;
+  		padding-right: 10vw;
 	}
 
 	.container
@@ -624,6 +626,7 @@ a
 	margin-left: 0%;
 	margin-right: 0%;
   }
+
   .faq-q-card{
 	  margin-bottom: 15px;
 	  width: 100%;
@@ -698,7 +701,7 @@ a
 
 	.landing 
 {
-	width: 95vw;
+	width: 100vw;
 	height: 100vh;
 	color: var(--light);
 	text-align: center;
@@ -708,6 +711,7 @@ a
 .landing .betalab img
 {
 	width: 550px;
+	margin-top: 15vh;
 }
 
 
@@ -716,8 +720,8 @@ a
 		width: 60%;
 		height: auto;
 		max-height: none;
-		  margin-left: 20%;
-		  margin-right: auto;
+		margin-left: 20%;
+		margin-right: auto;
 	
 }
 .logos{
@@ -730,6 +734,19 @@ a
 	width: 80%;
 }
 
+.about{
+	padding-left: 5vw;
+  padding-right: 5vw;
+}
+.time{
+	padding-left: 5vw;
+  	padding-right: 5vw;
+}
+
+.faq-grid{
+	padding-left: 5vw;
+  padding-right: 5vw;
+}
  .faq-q-card p {
 		padding-bottom: 10px;
 		font-size: 15px;
@@ -741,6 +758,9 @@ a
 		font-size: 15px;
 	}
 
+	.contactpage img{
+		margin-bottom: 5vh;
+	}
 	
 
 	
