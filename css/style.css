@@ -107,7 +107,7 @@ a
 
 .landing .betalab
 {
-	padding-top: 160px;
+	padding-top: 20vh;
 	padding-bottom: 10px;
 }
 
@@ -165,6 +165,17 @@ a
 	padding: 30px 40px;	
 }
 
+.about button{
+	margin-top: 20px;
+	margin-left: 0;
+	font-size: 20px;
+	color: var(--dark);
+	margin-left: 40px;
+	padding: 20px 30px;	
+	background-color: var(--light);
+	border-radius: 10px;
+	box-shadow: 0 0 0 0;
+}
 .highlight {
 	color: #fff;
 	text-shadow: -2px 2px 0 #000,
@@ -498,7 +509,9 @@ a
 	{
 		width: 100%;
 	}
-
+	.about button{
+		margin-left: 0px;
+	}
 	.time
 	{
 		width: 100%;
@@ -854,7 +867,9 @@ a
 @media(max-width: 378px) {
 
 
-	
+.navbar h1{
+	padding-top: 5px;
+}
 	.landing .text h3
 {
 	font-size: 20px;
