@@ -66,6 +66,11 @@ a
 	z-index: 4;
 }
 
+.navbar .logo
+{
+	padding: 0;
+}
+
 .navbar .fl
 {
 	justify-content: space-between;
