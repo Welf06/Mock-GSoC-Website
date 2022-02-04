@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:wght@500&display=swap');
 
+
+html {
+	scroll-behavior: smooth;
+ }
+ 
 :root
 {
 	--pric: #00ADB5;
@@ -9,6 +14,11 @@
 	--dark: #222831;
 }
 
+*{
+	padding:0;
+	margin:0
+	}
+	
 body
 {
 	background-color: var(--backc);
@@ -125,7 +135,7 @@ a
 {
 	font-family: 'Lexend Deca', sans-serif;
 	margin-top: 50px;
-	margin-bottom: 75px;
+	padding-bottom: 75px;
 	font-size: 85px;
 }
 
@@ -300,6 +310,9 @@ a
   border-radius: 6px;
 }
 
+.content p {
+	padding-top: 5px;
+}
 
 .container
 {

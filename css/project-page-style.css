@@ -9,7 +9,10 @@
 	--dark: #222831;
 }
 
-
+html {
+   scroll-behavior: smooth;
+ }
+ 
 body{
    font-family: 'Montserrat', sans-serif;
    color: #222831;
